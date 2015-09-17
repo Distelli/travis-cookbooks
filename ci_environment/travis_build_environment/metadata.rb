@@ -9,4 +9,4 @@ depends "timezone"
 depends "sysctl"
 depends "openssh"
 depends "unarchivers"
-depends "iptables"
+

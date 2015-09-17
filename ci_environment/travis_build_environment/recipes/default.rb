@@ -114,8 +114,6 @@ cookbook_file "/etc/sudoers.d/env_keep" do
   source "etc/sudoers/env_keep"
 end
 
-include_recipe "iptables"
-
 template "/etc/environment" do
   owner "root"
   group "root"
