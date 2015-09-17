@@ -76,9 +76,10 @@ template "/etc/hostname" do
   not_if { !node[:travis_build_environment][:update_hosts] }
 end
 
-execute "hostname #{hostname}" do
-  user "root"
-end
+# This does NOT work on Docker!
+#execute "hostname #{hostname}" do
+#  user "root"
+#end
 
 
 template "/etc/security/limits.conf" do
